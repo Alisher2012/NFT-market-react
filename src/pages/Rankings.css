@@ -1,0 +1,176 @@
+.page--nft-detail .main {
+  background: var(--bg-page);
+}
+
+.nft-detail {
+  padding: 0 0 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nft-detail__hero-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.nft-detail__hero-image-wrap {
+  width: 100%;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: var(--bg-card);
+  aspect-ratio: 16 / 10;
+}
+
+.nft-detail__hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.nft-detail__bottom {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .nft-detail__bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nft-detail__left {
+  min-width: 0;
+}
+
+.nft-detail__title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.nft-detail__mint {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.nft-detail__auction {
+  background: var(--bg-card);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  text-align: center;
+  min-width: 18rem;
+}
+
+.nft-detail__auction-label {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0 0 1rem;
+}
+
+.nft-detail__countdown {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.nft-detail__countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nft-detail__countdown-value {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.nft-detail__countdown-label {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.nft-detail__countdown-sep {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.nft-detail__bid {
+  width: 100%;
+  justify-content: center;
+}
+
+/* More From This Artist - 3 cards per row */
+.nft-detail .discover__grid,
+.more-from-artist .discover__grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .nft-detail .discover__grid,
+  .more-from-artist .discover__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .nft-detail .discover__grid,
+  .more-from-artist .discover__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section__title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.btn--arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn__arrow {
+  color: var(--accent);
+  font-size: 0.875rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 1.25rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.btn--outline {
+  background: transparent;
+  border-color: var(--accent);
+  color: var(--text);
+}

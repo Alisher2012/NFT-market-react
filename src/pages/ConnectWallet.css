@@ -1,0 +1,157 @@
+.page--artist-profile .main {
+  background: var(--bg-page);
+}
+
+.artist-profile {
+  margin-bottom: 2rem;
+}
+
+.artist-profile__banner-wrap {
+  position: relative;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 18rem;
+}
+
+.artist-profile__banner {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+  display: block;
+}
+
+.artist-profile__card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 3rem;
+  background: linear-gradient(transparent, var(--bg) 50%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .artist-profile__card {
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.artist-profile__top {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .artist-profile__top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.artist-profile__avatar {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 1.25rem;
+  object-fit: cover;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+}
+
+.artist-profile__text {
+  flex: 1;
+  min-width: 0;
+}
+
+.artist-profile__name {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+}
+
+.artist-profile__bio-label {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0 0 0.25rem;
+}
+
+.artist-profile__bio {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.artist-profile__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.artist-profile__wallet {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  font-size: 0.95rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+.artist-profile__wallet-icon {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.artist-profile__follow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  font: inherit;
+}
+
+.artist-profile__follow-icon {
+  font-size: 1.1rem;
+}
+
+.artist-nfts {
+  padding-top: 1rem;
+}
+
+.artist-nfts .discover__grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .artist-nfts .discover__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .artist-nfts .discover__grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,52 @@
+.creator-card {
+  background: var(--bg-card);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  text-align: center;
+  position: relative;
+}
+
+.creator-card__rank {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.creator-card__avatar-wrap {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+}
+
+.creator-card__avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.creator-card__name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+}
+
+.creator-card__sales {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.creator-card__sales span {
+  color: var(--text);
+}

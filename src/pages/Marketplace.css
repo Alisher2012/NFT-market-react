@@ -1,0 +1,185 @@
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 2rem 0 4rem;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.hero__title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 0 1rem;
+}
+
+.hero__desc {
+  color: var(--text-muted);
+  margin: 0 0 2rem;
+  max-width: 30rem;
+}
+
+@media (max-width: 900px) {
+  .hero__desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.hero__stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.hero__stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__stat-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.hero__stat-label {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.hero__featured {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__nft-card {
+  background: var(--bg-card);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  max-width: 25rem;
+}
+
+.hero__nft-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero__nft-info {
+  padding: 1.25rem;
+}
+
+.hero__nft-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.hero__nft-creator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.hero__nft-avatar {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  color: var(--text);
+}
+
+/* Sections */
+.section {
+  padding: 3rem 0;
+}
+
+.section__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section__title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.section__subtitle {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Top Creators - 4 per row */
+.creators__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .creators__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .creators__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Discover - shared grid */
+.discover__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1.5rem;
+}
+
+/* Shared buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 1.25rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.btn--primary {
+  background: var(--accent);
+}
+
+.btn--outline {
+  background: transparent;
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.btn__icon {
+  font-size: 1rem;
+  margin-right: 0.25rem;
+}
